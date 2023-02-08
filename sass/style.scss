@@ -1,0 +1,49 @@
+// declaration des variables
+
+//-- les coleurs
+$color_button:#9356DC ;
+$background_color: #f2f2f2;
+$background_form:#e6daf6;
+
+//-- les fonts
+$font_txt: Roboto, sans-serif;
+$font_title: Shrikhand;
+//les marges
+$margin:30px;
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0px;
+}
+body {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  // style formulaire de recherche
+  .search{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    background-color:$background_form;
+  }
+  .icon_research{
+   margin-right:10px;
+   font-size: small;
+  }
+  .input_research{
+    border: none;
+    background-color:$background_form;
+  }
+  // reservation
+  .reservation{
+   margin: $margin;
+   align-items: center;
+  }
+  .fonctionnement{
+    margin: $margin;
+  }
