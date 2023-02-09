@@ -13,6 +13,7 @@ $margin:30px;
 
 *{
     box-sizing: border-box;
+    font-family: $font_txt;
     margin:0;
     padding: 0px;
 }
@@ -22,6 +23,15 @@ body {
     margin-right: auto;
 
   }
+  // style header_ page d'acceuil
+  .header_acceuil{
+    margin-top: 20px;
+    text-align: center;
+
+    .logo_header{
+        width: 50%;
+    }
+  }
   // style formulaire de recherche
   .search{
     align-items: center;
@@ -30,20 +40,40 @@ body {
     height: 30px;
     justify-content: center;
     background-color:$background_form;
+    
+    .icon_resarch {
+        font-size: small;
+        
+    }
+    .input_research{
+        margin-left: 10px;
+        border: none;
+        background-color: $background_form;
+    }
+  
   }
-  .icon_research{
-   margin-right:10px;
-   font-size: small;
-  }
-  .input_research{
-    border: none;
-    background-color:$background_form;
-  }
+  
   // reservation
   .reservation{
-   margin: $margin;
    align-items: center;
+   margin: $margin;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
+   .titre_reservation{
+    width: 70%;
+    font-family: $font_title;
+
+   }
+   .sous_titre{
+   margin-bottom: 20px;
+   margin-top: 20px;
+   
+   }
+  
   }
+  //style fonctionnement
   .fonctionnement{
     margin: $margin;
   }
