@@ -1,28 +1,7 @@
-// declaration des variables
+@import'variables';
+@import 'utilities';
+@import'buttons';
 
-//-- les coleurs
-$color_button:#9356DC ;
-$background_color: #f2f2f2;
-$background_form:#e6daf6;
-
-//-- les fonts
-$font_txt: Roboto, sans-serif;
-$font_title: Shrikhand;
-//les marges
-$margin:30px;
-
-*{
-    box-sizing: border-box;
-    font-family: $font_txt;
-    margin:0;
-    padding: 0px;
-}
-body {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
   // style header_ page d'acceuil
   .header_acceuil{
     margin-top: 20px;
