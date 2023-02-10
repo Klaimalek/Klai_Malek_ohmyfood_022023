@@ -1,0 +1,15 @@
+@mixin shadow{
+    box-shadow: 6px 6px 6px #aaa;;
+}
+@mixin display_column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+@mixin display_row{
+    display: flex;
+    flex-direction: row;
+}
+@mixin background_btn{
+    background-image: linear-gradient(to top, #9356dc, #b35cdc, #e86edb); ;
+}

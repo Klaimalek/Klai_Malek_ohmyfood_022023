@@ -1,6 +1,9 @@
 @import'variables';
 @import 'utilities';
 @import'buttons';
+@import'elt_liste';
+@import'mixines';
+@import'annimations';
 
   // style header_ page d'acceuil
   .header_acceuil{
@@ -34,16 +37,13 @@
   
   // reservation
   .reservation{
+   @include  display_column;
    align-items: center;
    margin: $margin;
-   display: flex;
-   flex-direction: column;
    text-align: center;
-
    .titre_reservation{
     width: 70%;
     font-family: $font_title;
-
    }
    .sous_titre{
    margin-bottom: 20px;
@@ -55,4 +55,8 @@
   //style fonctionnement
   .fonctionnement{
     margin: $margin;
+    @include display_column;
+  }
+  .titre_section{
+    margin-bottom: 20px;
   }

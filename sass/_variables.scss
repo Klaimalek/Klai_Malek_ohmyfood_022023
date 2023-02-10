@@ -1,12 +1,25 @@
 // declaration des variables
 
 //-- les coleurs
-$color_button: linear-gradient(to top, #9356dc, #b35cdc, #e86edb); ;
+$color_primary: #9356DC;
+$color_secondary: #FF79DA;
+$color_tertiary: #99E2D0;
+$color_footer: #353535;
 $background_color: #f2f2f2;
 $background_form:#e6daf6;
+$background_elt_liste:#f5f5f5;
+
 
 //-- les fonts
-$font_txt:" Roboto, sans-serif";
-$font_title: "Shrikhand", "sans-serif";
+$font_txt: 'Roboto', sans-serif;
+$font-title: 'Shrikhand', cursive;
 //les marges
-$margin:30px;
+$margin:50px;
+//les fonctions
+@function btn_color($color){
+  @if(lighten($color)>30){
+     @return $color_button;
+  }@else{
+    @return #11ae72;
+  }
+}

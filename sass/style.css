@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0px;
 }
@@ -9,6 +9,62 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.button_acceuil {
+  display: inline-block;
+  background-image: linear-gradient(to top, #9356dc, #b35cdc, #e86edb);
+  border: 1.5px solid transparent;
+  border-radius: 25px;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  box-shadow: 6px 6px 6px #aaa;
+}
+
+.button_acceuil:hover {
+  cursor: pointer;
+}
+
+.liste_fonctionnement .liste_acceuil {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  counter-reset: number_step;
+}
+.liste_fonctionnement .liste_acceuil .element_liste {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  flex-grow: 1;
+  box-shadow: 6px 6px 6px #aaa;
+}
+.liste_fonctionnement .liste_acceuil .element_liste::before {
+  content: "" counter(number_step);
+  counter-increment: number_step;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 8%;
+  text-align: center;
+  right: 25px;
+  position: relative;
+}
+.liste_fonctionnement .liste_acceuil .element_liste:hover {
+  transform: scale(1.1);
+}
+.liste_fonctionnement .liste_acceuil .element_liste .fas {
+  color: #9356dc;
+  width: 8%;
+}
+.liste_fonctionnement .liste_acceuil .element_liste .text {
+  width: 80%;
 }
 
 .header_acceuil {
@@ -37,20 +93,29 @@ body {
 }
 
 .reservation {
-  align-items: center;
-  margin: 30px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+  margin: 50px;
   text-align: center;
 }
 .reservation .titre_reservation {
   width: 70%;
-  font-family: Shrikhand;
+  font-family: "Shrikhand", cursive;
 }
 .reservation .sous_titre {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 .fonctionnement {
-  margin: 30px;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.titre_section {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

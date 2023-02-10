@@ -1,16 +1,23 @@
+@import'mixines';
+@import'annimations';
 %btn{
     display: inline-block;
-    background-image: $color_button;
+    @include background_btn;
+    //background-image: $color_button;
     border: 1.5px solid transparent;
     border-radius: 25px;
     width: 100%;
     padding: 15px;
     color: #fff;
-    box-shadow: 6px 6px 6px #aaa;
+    //box-shadow: 6px 6px 6px #aaa;
+    @include shadow;
 }
 
 
 .button_acceuil{
    @extend %btn;
-   
+    &:hover{
+        cursor: pointer;
+      
+ }
 }
