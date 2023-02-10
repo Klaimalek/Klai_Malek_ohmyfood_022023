@@ -1,0 +1,45 @@
+@import'mixines';
+@import'annimations';
+
+.liste_fonctionnement{
+    .liste_acceuil{
+        @include display_column;
+        gap: 20px;
+        width: 100%;
+        counter-reset: number_step;
+        .element_liste{
+            &::before{
+                content: "" counter(number_step);
+                counter-increment: number_step;
+                color:white;
+                background-color:$color_primary ;
+                border-radius:50% ;
+                width: 8%;
+                text-align: center;
+                right:25px;
+                position: relative;
+                
+            }  
+            list-style-type: none;
+            @include  display_row;
+            width:80%;
+            padding:20px;
+            background-color: $background_elt_liste;
+            border-radius: 20px;
+            flex-grow: 1;
+            @include shadow;
+            &:hover{
+                @include zoom;
+            }
+            .fas{
+                color: #9356dc;
+                width: 8%;
+            }
+            .text{
+              width:80% ;
+            }
+             
+            
+        }
+    }
+}
