@@ -18,6 +18,7 @@
    @extend %btn;
     &:hover{
         cursor: pointer;
+        background-blend-mode: lighten;
       
  }
 }
