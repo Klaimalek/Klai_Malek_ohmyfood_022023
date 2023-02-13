@@ -24,6 +24,7 @@ body {
 
 .button_acceuil:hover {
   cursor: pointer;
+  background-blend-mode: lighten;
 }
 
 .liste_fonctionnement .liste_acceuil {
@@ -67,6 +68,68 @@ body {
   width: 80%;
 }
 
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-shadow: 6px 6px 6px #aaa;
+  margin: 0 30px 20px 30px;
+  border-radius: 10%;
+  background-color: #ffffff;
+}
+.card .image_card .image_resto {
+  width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px 30px 0px 0px;
+}
+.card .information_resto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 30px 10px 20px;
+}
+.card .information_resto .infos {
+  width: 70%;
+}
+.card .information_resto .infos .nom_resto {
+  margin-bottom: 5px;
+}
+.card .information_resto .fa-heart {
+  width: 10%;
+}
+
+.footer_identique {
+  padding-left: 30px;
+  background-color: #353535;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footer_identique .img_footer {
+  color: #ffffff;
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 10px;
+}
+.footer_identique .liste_footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+.footer_identique .liste_footer .infos_liste {
+  list-style: none;
+}
+.footer_identique .liste_footer .infos_liste .element_footer {
+  margin-bottom: 10px;
+}
+.footer_identique .liste_footer .infos_liste .element_footer .lien_footer {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .header_acceuil {
   margin-top: 20px;
   text-align: center;
@@ -97,7 +160,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin: 50px;
+  margin: 30px;
   text-align: center;
 }
 .reservation .titre_reservation {
@@ -110,7 +173,7 @@ body {
 }
 
 .fonctionnement {
-  margin: 50px;
+  margin: 30px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -118,4 +181,20 @@ body {
 
 .titre_section {
   margin-bottom: 20px;
+}
+
+.restaurants {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.restaurants .titre_section {
+  margin: 30px;
+}
+.restaurants .cards_resto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

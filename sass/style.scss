@@ -4,6 +4,9 @@
 @import'elt_liste';
 @import'mixines';
 @import'annimations';
+@import'carte';
+@import'footer';
+
 
   // style header_ page d'acceuil
   .header_acceuil{
@@ -52,11 +55,27 @@
    }
   
   }
-  //style fonctionnement
+  //style  section fonctionnement
   .fonctionnement{
     margin: $margin;
     @include display_column;
   }
   .titre_section{
     margin-bottom: 20px;
+  }
+  //style section restauarant
+  .restaurants{
+    width: 100%;
+    background-color: $background_color;
+    @include display_column;
+    
+    .titre_section{
+      margin:$margin;
+    }
+    .cards_resto{
+      @include display_column;
+      
+      
+    }
+
   }
