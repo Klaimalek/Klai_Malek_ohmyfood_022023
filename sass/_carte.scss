@@ -1,0 +1,34 @@
+@import'mixines';
+@import'variables';
+.card{
+@include display_column;
+@include shadow;
+ margin: 0 30px 20px  30px;
+ border-radius: 10%;
+ background-color: $background_card;
+  .image_card{
+    .image_resto{
+        width: 100%;
+        min-height: 150px;
+        max-height: 150px;
+        object-fit: cover;
+        @include border_img;
+    }
+  }
+  .information_resto{
+    @include display_row;
+    justify-content: space-between;
+    padding:  10px 30px 10px 20px;
+    .infos{
+        width: 70%;
+        .nom_resto{
+            margin-bottom: 5px;
+        }
+    }
+    .fa-heart{
+        width: 10%;
+
+    }
+    
+  }
+}
