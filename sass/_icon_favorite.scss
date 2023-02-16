@@ -1,0 +1,39 @@
+@import'variables';
+@import'mixines';
+@import'annimations';
+
+%icon{
+    display: block;
+    color: transparent;
+    background-clip: text;
+    background-image: $background_gradient;
+}
+
+.card{
+    .information_resto{
+        @include display_row;
+        .icon_favorit{
+            font-size: x-large;
+            .fas{
+                display: none;
+                
+            }
+            &:active{
+                .far{
+                    display: none;
+                }
+                .fas{
+                    @extend  %icon;
+                }
+            }
+          
+            
+           // .fas{
+             //  color: transparent; 
+              // background-clip: text;
+               //background-image:linear-gradient( purple,pink)
+            
+        //}
+        }
+    }
+}
