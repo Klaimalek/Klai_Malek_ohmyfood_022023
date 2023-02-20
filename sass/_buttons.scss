@@ -1,16 +1,16 @@
+@import'variables';
 @import'mixines';
 @import'annimations';
 %btn{
     display: inline-block;
-    @include background_btn;
-    //background-image: $color_button;
+    background-image: $background_gradient;
     border: 1.5px solid transparent;
     border-radius: 25px;
     width: 100%;
     padding: 15px;
     color: #fff;
-    //box-shadow: 6px 6px 6px #aaa;
-    @include shadow;
+    //@include shadow;
+    box-shadow: $box-shadow;
 }
 
 
@@ -18,7 +18,8 @@
    @extend %btn;
     &:hover{
         cursor: pointer;
-        background-blend-mode: lighten;
-      
+        background-blend-mode: hard-light;
+    
+        
  }
 }

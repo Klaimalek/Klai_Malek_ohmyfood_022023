@@ -1,8 +1,8 @@
 @import'mixines';
 @import'variables';
 .card{
-@include display_column;
-@include shadow;
+@include display(column);
+box-shadow: $box-shadow;
  margin: 0 30px 20px  30px;
  border-radius: 10%;
  background-color: $background_card;
@@ -16,7 +16,7 @@
     }
   }
   .information_resto{
-    @include display_row;
+    @include display(row);
     justify-content: space-between;
     padding:  10px 30px 10px 20px;
     .infos{
@@ -25,9 +25,8 @@
             margin-bottom: 5px;
         }
     }
-    .fa-heart{
+    .i{
         width: 10%;
-
     }
     
   }

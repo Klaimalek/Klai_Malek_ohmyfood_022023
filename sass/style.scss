@@ -5,6 +5,7 @@
 @import'mixines';
 @import'annimations';
 @import'carte';
+@import'icon_favorite';
 @import'footer';
 
 
@@ -40,7 +41,7 @@
   
   // reservation
   .reservation{
-   @include  display_column;
+   @include display_column;
    align-items: center;
    margin: $margin;
    text-align: center;
@@ -58,7 +59,7 @@
   //style  section fonctionnement
   .fonctionnement{
     margin: $margin;
-    @include display_column;
+    @include flex_direction(column);
   }
   .titre_section{
     margin-bottom: 20px;
@@ -67,15 +68,13 @@
   .restaurants{
     width: 100%;
     background-color: $background_color;
-    @include display_column;
+    @include display(column);
     
     .titre_section{
       margin:$margin;
     }
     .cards_resto{
-      @include display_column;
-      
-      
+      @include display(column);
     }
 
   }

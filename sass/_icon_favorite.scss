@@ -7,6 +7,9 @@
     color: transparent;
     background-clip: text;
     background-image: $background_gradient;
+    opacity: 0;
+    transition: all 3s ease-in-out;  
+   
 }
 
 .card{
@@ -18,12 +21,16 @@
                 display: none;
                 
             }
-            &:active{
+            &:hover{
                 .far{
                     display: none;
+
                 }
                 .fas{
                     @extend  %icon;
+                    opacity: 1;
+                    
+                    
                 }
             }
           

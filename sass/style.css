@@ -11,6 +11,19 @@ body {
   margin-right: auto;
 }
 
+@keyframes full-scale {
+  from {
+    transform: scale(0);
+    animation-timing-function: ease-in-out;
+  }
+  95% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .button_acceuil {
   display: inline-block;
   background-image: linear-gradient(to top, #9356dc, #b35cdc, #e86edb);
@@ -19,14 +32,27 @@ body {
   width: 100%;
   padding: 15px;
   color: #fff;
-  box-shadow: 6px 6px 6px #aaa;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .button_acceuil:hover {
   cursor: pointer;
-  background-blend-mode: lighten;
+  background-blend-mode: hard-light;
 }
 
+@keyframes full-scale {
+  from {
+    transform: scale(0);
+    animation-timing-function: ease-in-out;
+  }
+  95% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .liste_fonctionnement .liste_acceuil {
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +70,7 @@ body {
   background-color: #f5f5f5;
   border-radius: 20px;
   flex-grow: 1;
-  box-shadow: 6px 6px 6px #aaa;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 .liste_fonctionnement .liste_acceuil .element_liste::before {
   content: "" counter(number_step);
@@ -52,10 +78,10 @@ body {
   color: white;
   background-color: #9356DC;
   border-radius: 50%;
-  width: 8%;
+  width: 10%;
   text-align: center;
-  right: 25px;
   position: relative;
+  right: 50px;
 }
 .liste_fonctionnement .liste_acceuil .element_liste:hover {
   transform: scale(1.1);
@@ -68,11 +94,22 @@ body {
   width: 80%;
 }
 
+@keyframes full-scale {
+  from {
+    transform: scale(0);
+    animation-timing-function: ease-in-out;
+  }
+  95% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .card {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  box-shadow: 6px 6px 6px #aaa;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin: 0 30px 20px 30px;
   border-radius: 10%;
   background-color: #ffffff;
@@ -86,7 +123,6 @@ body {
   border-radius: 30px 30px 0px 0px;
 }
 .card .information_resto {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 30px 10px 20px;
@@ -97,15 +133,53 @@ body {
 .card .information_resto .infos .nom_resto {
   margin-bottom: 5px;
 }
-.card .information_resto .fa-heart {
+.card .information_resto .i {
   width: 10%;
+}
+
+@keyframes full-scale {
+  from {
+    transform: scale(0);
+    animation-timing-function: ease-in-out;
+  }
+  95% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.card .information_resto .icon_favorit:hover .fas {
+  display: block;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(to top, #9356dc, #b35cdc, #e86edb);
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+
+.card .information_resto {
+  display: flex;
+  flex-direction: row;
+}
+.card .information_resto .icon_favorit {
+  font-size: x-large;
+}
+.card .information_resto .icon_favorit .fas {
+  display: none;
+}
+.card .information_resto .icon_favorit:hover .far {
+  display: none;
+}
+.card .information_resto .icon_favorit:hover .fas {
+  opacity: 1;
 }
 
 .footer_identique {
   padding-left: 30px;
   background-color: #353535;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 .footer_identique .img_footer {
@@ -114,8 +188,6 @@ body {
   margin-bottom: 10px;
 }
 .footer_identique .liste_footer {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
 }
@@ -174,8 +246,6 @@ body {
 
 .fonctionnement {
   margin: 30px;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -186,15 +256,11 @@ body {
 .restaurants {
   width: 100%;
   background-color: #f2f2f2;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 .restaurants .titre_section {
   margin: 30px;
 }
 .restaurants .cards_resto {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

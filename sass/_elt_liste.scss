@@ -1,3 +1,4 @@
+@import'variables';
 @import'mixines';
 @import'annimations';
 
@@ -14,10 +15,10 @@
                 color:white;
                 background-color:$color_primary ;
                 border-radius:50% ;
-                width: 8%;
+                width: 10%;
                 text-align: center;
-                right:25px;
                 position: relative;
+                right: 50px;
                 
             }  
             list-style-type: none;
@@ -27,7 +28,8 @@
             background-color: $background_elt_liste;
             border-radius: 20px;
             flex-grow: 1;
-            @include shadow;
+            //@include shadow;
+            box-shadow: $box-shadow;
             &:hover{
                 @include zoom;
             }
