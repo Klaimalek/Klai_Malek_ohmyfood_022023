@@ -6,20 +6,22 @@
     background-image: $background_gradient;
     border: 1.5px solid transparent;
     border-radius: 25px;
-    width: 100%;
     padding: 15px;
     color: #fff;
+    cursor: pointer;
     //@include shadow;
     box-shadow: $box-shadow;
 }
 
 
-.button_acceuil{
-   @extend %btn;
-    &:hover{
-        cursor: pointer;
-        background-blend-mode: hard-light;
     
-        
+
+.button_1{
+    text-align: center;
+.button{
+    @extend %btn;
+    &:hover{
+        background-blend-mode: hard-light;   
  }
+}
 }

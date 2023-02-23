@@ -3,6 +3,7 @@
 @import'annimations';
 
 .liste_fonctionnement{
+    margin: $margin;
     .liste_acceuil{
         @include display_column;
         gap: 20px;
@@ -15,30 +16,36 @@
                 color:white;
                 background-color:$color_primary ;
                 border-radius:50% ;
-                width: 10%;
-                text-align: center;
+                width: 20px;
+                //text-align: center;
                 position: relative;
-                right: 50px;
+                right: 43px;
+                padding: 5px;
                 
             }  
             list-style-type: none;
             @include  display_row;
-            width:80%;
+    
+            width:100%;
             padding:20px;
             background-color: $background_elt_liste;
             border-radius: 20px;
             flex-grow: 1;
-            //@include shadow;
             box-shadow: $box-shadow;
             &:hover{
-                @include zoom;
+               animation: zoom 1s infinite;
             }
+            
+              
             .fas{
                 color: #9356dc;
                 width: 8%;
+        
+                padding-right: 10px;
             }
             .text{
-              width:80% ;
+              
+              
             }
              
             

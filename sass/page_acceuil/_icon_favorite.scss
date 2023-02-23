@@ -8,13 +8,12 @@
     background-clip: text;
     background-image: $background_gradient;
     opacity: 0;
-    transition: all 3s ease-in-out;  
-   
+   // animation: 3s linear 3s infinite running slidein; 
+    position: relative;
+    animation:  full-scale 3s forwards ;
 }
 
-.card{
-    .information_resto{
-        @include display_row;
+
         .icon_favorit{
             font-size: x-large;
             .fas{
@@ -40,5 +39,4 @@
             
         //}
         }
-    }
-}
+    

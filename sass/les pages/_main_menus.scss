@@ -1,0 +1,84 @@
+@import'variables';
+@import'mixines';
+.main_menu{
+    @include display_column;
+    flex-wrap: wrap;
+    
+    .resto_la_francaise{
+      
+        background-color: $background_color;
+    .img_resto_la_francaise{
+        @include img_resto;
+    }
+    
+        
+.description_menu{
+    padding: $margin;
+    background-color: $background_color;
+    @include border_background_menu;
+    position: relative;
+    bottom: 30px;
+  .titre_resto_icon_coeur{
+    @include display_row;
+    justify-content: space-between;
+    margin-bottom: $margin;
+    .titre_menu{
+        font-family: $font-title;
+    }
+}  
+.detail_menu_1{
+  
+.menu_1{
+
+margin-bottom:$margin ;
+//margin: $margin;
+.title_menu_1{
+    .text_menu{
+    font-weight: lighter;
+     
+    }
+.line_menu{
+    width: 50px;
+    height: 3px;
+    background-color: #99E2D0;
+    border: none;
+    margin-bottom :5px ;
+}  
+}
+
+.liste_menus{
+    margin-top: $margin;
+    .elt_1{
+        margin-bottom: 20px ;
+        background-color: $background_card;
+        padding: 10px;
+        @include display_row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius:20px 20px 20px 20px ;
+        @include shadow;
+        .name_menu_1{
+         width: 70%;
+         .name{
+            padding-bottom: 5px;
+         }
+        }
+        .price{
+         width: 10%;
+         font-weight: bold;
+        }
+        
+    }
+}
+}
+}}
+}
+}
+
+/*.titre_resto_icon_coeur{
+    @include display_row;
+    justify-content: space-between;
+    margin: $margin;
+
+}*/
+

@@ -4,19 +4,18 @@
 @include display(column);
 box-shadow: $box-shadow;
  margin: 0 30px 20px  30px;
- border-radius: 10%;
+ border-radius: 10px 10px 0px 0px;
  background-color: $background_card;
+ cursor: pointer;
+ 
   .image_card{
     .image_resto{
-        width: 100%;
-        min-height: 150px;
-        max-height: 150px;
-        object-fit: cover;
+        @include  img_resto;
         @include border_img;
     }
   }
   .information_resto{
-    @include display(row);
+    @include display_row;
     justify-content: space-between;
     padding:  10px 30px 10px 20px;
     .infos{
