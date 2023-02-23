@@ -1,0 +1,50 @@
+
+// animation pour l'icon coeur
+@keyframes full-scale {
+	from {
+		transform: scale(0);
+		animation-timing-function: ease-in-out;
+	}
+	95% {
+		transform: scale(1.1);
+		animation-timing-function: ease-in-out;
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+  @keyframes zoom {
+	50%{
+		transform: scale(1.1);
+	  
+  }
+  }
+  // animation shadow
+  @keyframes fill {
+	0% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  //animation pour l'ombre du boutton
+  @keyframes glowing {
+	0% {
+	
+	  box-shadow: 5px 5px 3px #121010;
+	}
+	50% {
+
+	  box-shadow: 5px 5px 3px #131010;
+	}
+	100% {
+	
+	  box-shadow: 3px 3px 3px #0b0808;
+	}
+  }
