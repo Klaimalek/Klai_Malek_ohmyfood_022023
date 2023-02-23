@@ -19,15 +19,15 @@
                 width: 20px;
                 //text-align: center;
                 position: relative;
-                right: 43px;
+                right: 20px;
                 padding: 5px;
+                text-align: center;
                 
             }  
             list-style-type: none;
             @include  display_row;
-    
             width:100%;
-            padding:20px;
+            padding: 15px 0 0 ;
             background-color: $background_elt_liste;
             border-radius: 20px;
             flex-grow: 1;
