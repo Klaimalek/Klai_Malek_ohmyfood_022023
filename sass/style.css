@@ -37,6 +37,28 @@ body {
     transform: scale(1.1);
   }
 }
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 5px 5px 3px #121010;
+  }
+  50% {
+    box-shadow: 5px 5px 3px #131010;
+  }
+  100% {
+    box-shadow: 3px 3px 3px #0b0808;
+  }
+}
 .button_1 .button {
   display: inline-block;
   background-image: linear-gradient(to top, #9356dc, #b35cdc, #e86edb);
@@ -46,13 +68,24 @@ body {
   color: #fff;
   cursor: pointer;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 
 .button_1 {
   text-align: center;
 }
+.button_1 .button {
+  /*.btn_bg{
+      position: relative;
+      background-color: darken($background_gradient, 5);
+      opacity: 0;
+      transition: opacity 250ms;
+  }*/
+}
 .button_1 .button:hover {
-  background-blend-mode: hard-light;
+  background-color: #bc95e9;
+  background-blend-mode: lighten;
+  animation: glowing 2s infinite;
 }
 
 @keyframes full-scale {
@@ -71,6 +104,28 @@ body {
 @keyframes zoom {
   50% {
     transform: scale(1.1);
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 5px 5px 3px #121010;
+  }
+  50% {
+    box-shadow: 5px 5px 3px #131010;
+  }
+  100% {
+    box-shadow: 3px 3px 3px #0b0808;
   }
 }
 .liste_fonctionnement {
@@ -133,11 +188,33 @@ body {
     transform: scale(1.1);
   }
 }
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 5px 5px 3px #121010;
+  }
+  50% {
+    box-shadow: 5px 5px 3px #131010;
+  }
+  100% {
+    box-shadow: 3px 3px 3px #0b0808;
+  }
+}
 .card {
   flex-direction: column;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin: 0 30px 20px 30px;
-  border-radius: 10px 10px 0px 0px;
+  margin: 0px 30px 20px 30px;
+  border-radius: 10px 10px 10px 10px;
   background-color: #ffffff;
   cursor: pointer;
 }
@@ -184,6 +261,28 @@ body {
     transform: scale(1.1);
   }
 }
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 5px 5px 3px #121010;
+  }
+  50% {
+    box-shadow: 5px 5px 3px #131010;
+  }
+  100% {
+    box-shadow: 3px 3px 3px #0b0808;
+  }
+}
 .icon_favorit:hover .fas {
   display: block;
   color: transparent;
@@ -192,7 +291,9 @@ body {
   background-image: linear-gradient(to top, #9356dc, #b35cdc, #e86edb);
   opacity: 0;
   position: relative;
-  animation: full-scale 3s forwards;
+  animation: full-scale 500ms 100ms forwards;
+  transform: scale(0);
+  transform-origin: bottom;
 }
 
 .icon_favorit {
@@ -392,6 +493,7 @@ body {
 }
 .restaurants .titre_section {
   margin: 30px;
+  padding-top: 20px;
 }
 .restaurants .cards_resto {
   flex-direction: column;

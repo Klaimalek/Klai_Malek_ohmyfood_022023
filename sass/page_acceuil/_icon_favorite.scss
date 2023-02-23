@@ -1,6 +1,6 @@
-@import'variables';
-@import'mixines';
-@import'annimations';
+@import'../utils/variables';
+@import'../utils/mixines';
+@import'../utils/animations';
 
 %icon{
     display: block;
@@ -10,7 +10,10 @@
     opacity: 0;
    // animation: 3s linear 3s infinite running slidein; 
     position: relative;
-    animation:  full-scale 3s forwards ;
+    animation:  full-scale 500ms 100ms forwards ;
+    transform: scale(0);
+	transform-origin: bottom;
+
 }
 
 
@@ -23,7 +26,7 @@
             &:hover{
                 .far{
                     display: none;
-
+                
                 }
                 .fas{
                     @extend  %icon;

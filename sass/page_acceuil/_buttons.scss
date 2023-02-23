@@ -1,6 +1,6 @@
-@import'variables';
-@import'mixines';
-@import'annimations';
+@import'../utils/variables';
+@import'../utils/mixines';
+@import'../utils/animations';
 %btn{
     display: inline-block;
     background-image: $background_gradient;
@@ -9,19 +9,26 @@
     padding: 15px;
     color: #fff;
     cursor: pointer;
-    //@include shadow;
     box-shadow: $box-shadow;
+    position: relative;
 }
-
-
-    
-
 .button_1{
     text-align: center;
 .button{
+
     @extend %btn;
     &:hover{
-        background-blend-mode: hard-light;   
- }
+    
+        background-color: lighten($color_primary, 15%);
+        background-blend-mode: lighten;
+        animation: glowing 2s infinite ;
+       
+    }
+    /*.btn_bg{
+        position: relative;
+        background-color: darken($background_gradient, 5);
+        opacity: 0;
+        transition: opacity 250ms;
+    }*/
 }
 }

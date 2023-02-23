@@ -1,14 +1,15 @@
-@import'variables';
-@import 'utilities';
-@import'buttons';
-@import'elt_liste';
-@import'mixines';
-@import'annimations';
-@import'carte';
-@import'icon_favorite';
-@import'footer';
-@import'header_menus';
-@import'main_menus';
+
+@import'utils/variables';
+@import 'utils/utilities';
+@import'page_acceuil/buttons';
+@import'page_acceuil/elt_liste';
+@import'utils/mixines';
+@import'utils/animations';
+@import'page_acceuil/carte';
+@import'page_acceuil/icon_favorite';
+@import'page_acceuil/footer';
+@import'pages/header_menus';
+@import'pages/main_menus';
 
   // style header_ page d'acceuil
   .header_acceuil{
@@ -73,6 +74,7 @@
     
     .titre_section{
       margin:$margin;
+      padding-top: 20px;
     }
     .cards_resto{
       @include display(column);

@@ -1,10 +1,10 @@
-@import'mixines';
-@import'variables';
+@import'../utils/mixines';
+@import'../utils/variables';
 .card{
 @include display(column);
 box-shadow: $box-shadow;
- margin: 0 30px 20px  30px;
- border-radius: 10px 10px 0px 0px;
+ margin: 0px 30px 20px  30px;
+ border-radius: 10px 10px 10px 10px;
  background-color: $background_card;
  cursor: pointer;
  
