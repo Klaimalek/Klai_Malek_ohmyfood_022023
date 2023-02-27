@@ -1,0 +1,37 @@
+@import'../utils/variables';
+@import'../utils/mixines';
+@import'../utils/animations';
+
+
+%check_style{
+    background-color: $color_tertiary;
+    color: $background_card;
+    width: 60px;
+    height: 48px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    right: -3rem;
+    padding:5px ;
+
+    .fa-2x{
+    animation: rotate 2s infinite;
+    }
+}
+
+.menu_price{
+    position: relative;
+  
+    .check{
+    display: none;
+    }
+    &:hover{
+     @extend %check_style;
+     animation:  slidein 3s  infinite;
+    
+    }
+    .price{
+        display: none;
+    }
+}
+ 
