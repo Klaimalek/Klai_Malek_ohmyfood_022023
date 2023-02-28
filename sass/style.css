@@ -59,6 +59,42 @@ body {
     box-shadow: 3px 3px 3px #0b0808;
   }
 }
+@keyframes slidein {
+  from {
+    margin-right: -1rem;
+    width: 150px;
+  }
+  to {
+    margin-right: 20px;
+    width: 200px;
+  }
+}
+@keyframes dish {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes grow {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
+  }
+}
 .button_1 .button {
   display: inline-block;
   background-image: linear-gradient(to top, #9356dc, #b35cdc, #e86edb);
@@ -128,6 +164,42 @@ body {
     box-shadow: 3px 3px 3px #0b0808;
   }
 }
+@keyframes slidein {
+  from {
+    margin-right: -1rem;
+    width: 150px;
+  }
+  to {
+    margin-right: 20px;
+    width: 200px;
+  }
+}
+@keyframes dish {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes grow {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
+  }
+}
 .liste_fonctionnement {
   margin: 30px;
 }
@@ -140,12 +212,13 @@ body {
   counter-reset: number_step;
 }
 .liste_fonctionnement .liste_acceuil .element_liste {
+  height: 60px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0 0;
   background-color: #f5f5f5;
   border-radius: 20px;
   flex-grow: 1;
@@ -157,19 +230,19 @@ body {
   color: white;
   background-color: #9356DC;
   border-radius: 50%;
-  width: 20px;
+  width: 15px;
+  margin-bottom: 20px;
   position: relative;
-  right: 43px;
+  right: 20px;
   padding: 5px;
-}
-.liste_fonctionnement .liste_acceuil .element_liste:hover {
-  animation: zoom 1s infinite;
+  text-align: center;
 }
 .liste_fonctionnement .liste_acceuil .element_liste .fas {
   color: #9356dc;
   width: 8%;
   padding-right: 10px;
 }
+
 @keyframes full-scale {
   from {
     transform: scale(0);
@@ -210,6 +283,42 @@ body {
     box-shadow: 3px 3px 3px #0b0808;
   }
 }
+@keyframes slidein {
+  from {
+    margin-right: -1rem;
+    width: 150px;
+  }
+  to {
+    margin-right: 20px;
+    width: 200px;
+  }
+}
+@keyframes dish {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes grow {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
+  }
+}
 .card {
   flex-direction: column;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -218,6 +327,9 @@ body {
   background-color: #ffffff;
   cursor: pointer;
 }
+.card .image_card {
+  z-index: 1;
+}
 .card .image_card .image_resto {
   width: 100%;
   min-height: 160px;
@@ -225,6 +337,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0px 0px;
+}
+.card .text_nouveau {
+  z-index: 2;
 }
 .card .information_resto {
   display: flex;
@@ -281,6 +396,42 @@ body {
   }
   100% {
     box-shadow: 3px 3px 3px #0b0808;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-right: -1rem;
+    width: 150px;
+  }
+  to {
+    margin-right: 20px;
+    width: 200px;
+  }
+}
+@keyframes dish {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes grow {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
   }
 }
 .icon_favorit:hover .fas {
@@ -409,24 +560,26 @@ body {
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 {
   margin-bottom: 20px;
   background-color: #ffffff;
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 6px 6px 6px #aaa;
 }
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .name_menu_1 {
-  width: 70%;
+  width: 90%;
 }
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .name_menu_1 .name {
   padding-bottom: 5px;
 }
-.main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .price {
+.main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .menu_price {
   width: 10%;
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
+.main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .price {
+  padding-left: 10px;
 }
 
 /*.titre_resto_icon_coeur{
@@ -435,6 +588,139 @@ body {
     margin: $margin;
 
 }*/
+/*.card{
+    position: relative;
+    .btn__card{
+        border: 2px solid ;
+        color: #008766;
+        background: $color-tertiary;
+        border: 5px solid $color-tertiary;
+         position: absolute;
+         right: 3%;
+        top: 4%;
+    }
+}*/
+.cards_new {
+  position: relative;
+}
+.cards_new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 1.5rem;
+  width: 5rem;
+  background: #99E2D0;
+  border: 5px solid #99E2D0;
+  color: #008766;
+  right: 2%;
+  top: 4%;
+  display: grid;
+  place-items: center;
+}
+
+@keyframes full-scale {
+  from {
+    transform: scale(0);
+    animation-timing-function: ease-in-out;
+  }
+  95% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoom {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 5px 5px 3px #121010;
+  }
+  50% {
+    box-shadow: 5px 5px 3px #131010;
+  }
+  100% {
+    box-shadow: 3px 3px 3px #0b0808;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-right: -1rem;
+    width: 150px;
+  }
+  to {
+    margin-right: 20px;
+    width: 200px;
+  }
+}
+@keyframes dish {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes grow {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
+  }
+}
+.menu_price:hover {
+  background-color: #99E2D0;
+  color: #ffffff;
+  width: 60px;
+  height: 48px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  right: -3rem;
+  padding: 5px;
+}
+.menu_price:hover .fa-2x {
+  animation: rotate 2s infinite;
+}
+
+.menu_price {
+  position: relative;
+}
+.menu_price .check {
+  display: none;
+}
+.menu_price:hover {
+  animation: slidein 3s infinite;
+}
+.menu_price .price {
+  display: none;
+}
+
 .header_acceuil {
   margin-top: 20px;
   text-align: center;
@@ -455,7 +741,7 @@ body {
   font-size: small;
 }
 .search .input_research {
-  margin-left: 10px;
+  margin-left: 15px;
   border: none;
   background-color: #e6daf6;
 }

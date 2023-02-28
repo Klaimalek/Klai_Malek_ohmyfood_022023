@@ -10,7 +10,8 @@
 @import'page_acceuil/footer';
 @import'pages/header_menus';
 @import'pages/main_menus';
-
+@import'page_acceuil/text_image';
+@import 'pages/check';
   // style header_ page d'acceuil
   .header_acceuil{
     margin-top: 20px;
@@ -34,7 +35,7 @@
         
     }
     .input_research{
-        margin-left: 10px;
+        margin-left: 15px;
         border: none;
         background-color: $background_form;
     }

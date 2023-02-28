@@ -12,7 +12,17 @@ box-shadow: $box-shadow;
     .image_resto{
         @include  img_resto;
         @include border_img;
+      
     }
+    
+   z-index: 1;
+   
+  }
+  .text_nouveau{
+    
+z-index: 2;
+
+
   }
   .information_resto{
     @include display_row;

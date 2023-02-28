@@ -10,14 +10,15 @@
         width: 100%;
         counter-reset: number_step;
         .element_liste{
+            height: 60px;
             &::before{
                 content: "" counter(number_step);
                 counter-increment: number_step;
                 color:white;
                 background-color:$color_primary ;
                 border-radius:50% ;
-                width: 20px;
-                //text-align: center;
+                width: 15px;
+                margin-bottom:20px;
                 position: relative;
                 right: 20px;
                 padding: 5px;
@@ -27,14 +28,12 @@
             list-style-type: none;
             @include  display_row;
             width:100%;
-            padding: 15px 0 0 ;
+            padding: 20px 0 0 ;
             background-color: $background_elt_liste;
             border-radius: 20px;
             flex-grow: 1;
             box-shadow: $box-shadow;
-            &:hover{
-               animation: zoom 1s infinite;
-            }
+           
             
               
             .fas{
@@ -43,11 +42,7 @@
         
                 padding-right: 10px;
             }
-            .text{
               
-              
-            }
-             
             
         }
     }
