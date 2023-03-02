@@ -28,7 +28,10 @@
     }
 }  
 .detail_menu_1{
-  
+cursor: pointer;
+ &:hover{
+     animation: dish 5s ;
+}
 .menu_1{
 
 margin-bottom:$margin ;
@@ -50,32 +53,47 @@ margin-bottom:$margin ;
 .liste_menus{
     margin-top: $margin;
     .elt_1{
+        overflow: hidden;
+        //white-space: nowrap;
+        //text-overflow: ellipsis;
         margin-bottom: 20px ;
         background-color: $background_card;
        // padding: 10px;
         @include display_row;
-        
+        justify-content: space-between;
         
         //padding: 10px 0 10px 10px;
         border-radius:20px 20px 20px 20px ;
         @include shadow;
         .name_menu_1{
-          width: 90%;
-         .name{
-            padding-bottom: 5px;
-         }
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 70%;
+            //border: 2px solid;
+          h4,
+          p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
         }
         .menu_price{
-         width:10%;
+        //border: 2px solid red;
+        cursor: pointer;
+         //width:20%;
          font-weight: bold;
          display: flex;
          align-items: flex-end;
-         //.check{
+         .check{
             //display: none;
-         //}
+         }
         }
         .price{
-           padding-left: 10px; 
+          
         }
         
     }
