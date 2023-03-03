@@ -3,9 +3,7 @@
 .main_menu{
     @include display_column;
     flex-wrap: wrap;
-    
     .resto_la_francaise{
-      
         background-color: $background_color;
     .img_resto_la_francaise{
         @include img_resto;
@@ -28,10 +26,6 @@
     }
 }  
 .detail_menu_1{
-cursor: pointer;
- &:hover{
-     animation: dish 5s ;
-}
 .menu_1{
 
 margin-bottom:$margin ;
@@ -53,6 +47,7 @@ margin-bottom:$margin ;
 .liste_menus{
     margin-top: $margin;
     .elt_1{
+        animation: dish 3s;
         overflow: hidden;
         //white-space: nowrap;
         //text-overflow: ellipsis;

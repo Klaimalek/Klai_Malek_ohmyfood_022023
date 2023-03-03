@@ -79,6 +79,10 @@
     }
     .cards_resto{
       @include display(column);
+      .card_menu{
+        color: black;
+        text-decoration: none;
+      }
     }
 
   }
