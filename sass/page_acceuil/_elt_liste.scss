@@ -10,6 +10,7 @@
         width: 100%;
         counter-reset: number_step;
         .element_liste{
+            cursor: pointer;
             height: 60px;
             &::before{
                 content: "" counter(number_step);
@@ -33,17 +34,17 @@
             border-radius: 20px;
             flex-grow: 1;
             box-shadow: $box-shadow;
-           
-            
-              
             .fas{
-                color: #9356dc;
+                color: rgb(116, 112, 112);
                 width: 8%;
-        
                 padding-right: 10px;
             }
-              
-            
+           &:hover{
+            background-color: lighten($color_primary, 33%);
+            .fas{
+                color:$color_primary ;
+            }
+           }  
         }
     }
 }
