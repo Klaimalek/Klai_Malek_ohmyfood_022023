@@ -12,10 +12,11 @@ body {
 }
 
 .name {
-  font-size: larger;
+  font-size: 15px;
 }
 
 .sous_text {
+  font-size: 15px;
   font-weight: lighter;
 }
 
@@ -541,6 +542,12 @@ body {
 .main_menu .resto_la_francaise .description_menu .titre_resto_icon_coeur .titre_menu {
   font-family: "Shrikhand", cursive;
 }
+.main_menu .resto_la_francaise .description_menu .detail_menu_1 {
+  cursor: pointer;
+}
+.main_menu .resto_la_francaise .description_menu .detail_menu_1:hover {
+  animation: dish 5s;
+}
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 {
   margin-bottom: 30px;
 }
@@ -558,30 +565,37 @@ body {
   margin-top: 30px;
 }
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 {
+  overflow: hidden;
   margin-bottom: 20px;
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 6px 6px 6px #aaa;
 }
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .name_menu_1 {
-  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 70%;
 }
-.main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .name_menu_1 .name {
-  padding-bottom: 5px;
+.main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .name_menu_1 h4,
+.main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .name_menu_1 p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .menu_price {
-  width: 10%;
+  cursor: pointer;
   font-weight: bold;
   display: flex;
   align-items: flex-end;
 }
-.main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 .price {
-  padding-left: 10px;
-}
-
 /*.titre_resto_icon_coeur{
     @include display_row;
     justify-content: space-between;
@@ -693,34 +707,68 @@ body {
     transform: scaleY(1.8);
   }
 }
-.menu_price:hover {
-  background-color: #99E2D0;
-  color: #ffffff;
-  width: 60px;
-  height: 48px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  position: absolute;
-  right: -3rem;
-  padding: 5px;
-}
-.menu_price:hover .fa-2x {
-  animation: rotate 2s infinite;
-}
+/*.menu_price{
+    .price{
+        border: 2px solid yellow;  
+        width:30%;
+        translate: width 2s; 
+    }
+    &:hover{
+       width: 20%;  
+    }
 
+}*/
+/*.name_menu_1{
+    border: 2px solid;
+    width: 80%;
+    transition: width 2s;
+    &:hover{
+        width: 50%;
+    }
+}*/
+/*.menu_price{
+    border: 2px solid;
+    width: ;
+    transition: width 2s;
+    &:hover{
+        width: %;
+    }
+}*/
 .menu_price {
-  position: relative;
-}
-.menu_price .check {
-  display: none;
-}
-.menu_price:hover {
-  animation: slidein 3s infinite;
+  overflow: hidden;
 }
 .menu_price .price {
-  display: none;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.menu_price .check {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  height: 100%;
+  background-color: #99E2D0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: -50px;
+  width: 50px;
+}
+.menu_price .check .fa-2x {
+  color: white;
+  animation: rotate 1s infinite;
+}
+.menu_price:hover .check {
+  margin-right: 0;
 }
 
+/*.name_menu_1{
+    cursor: pointer;
+    border: 1px solid;
+    width: 70%;
+    transition: width 2s;
+    &:hover{
+     width: 50%;
+    }
+} */
 .header_acceuil {
   margin-top: 20px;
   text-align: center;
