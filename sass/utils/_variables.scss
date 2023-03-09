@@ -14,7 +14,9 @@ $background_gradient:linear-gradient(to top, #9356dc, #b35cdc, #e86edb);
 $background_gradient_btn:linear-gradient(to top, #ac72f3, #c087db, #e291da);
 $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
 
-
+// loader
+$loader--width: 250px;
+$loader-dot--size: 20px;
 //-- les fonts
 $font_txt: 'Roboto', sans-serif;
 $font-title:  'Shrikhand', cursive;
