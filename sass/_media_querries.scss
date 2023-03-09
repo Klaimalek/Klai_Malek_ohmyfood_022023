@@ -1,14 +1,70 @@
-@media screen and (max-width: 1400px) and (min-width: 782px){
-    .cards_resto{
-    border: 2px solid;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-         .card{
-        border: 2px solid red;
-        
-         }
-       
+@import './utils/mixines';
+@import './utils/variables';
+@media screen and (min-width: 782px) and (max-width: 1400px) {
+  .cards_resto {
+    .cards_new{
+      position: relative;
+      &::before{
+          content:"New" ;
+          position: absolute;
+          height: 1.5rem;
+          width: 5rem;
+          background: $color-tertiary;
+          border: 5px solid $color-tertiary;
+          color: #008766;
+          right:2%;
+          top: 40%;
+          display: grid;
+          place-items: center;
+          
+      }
     }
+    .card{
+      @include display_row;
+      box-shadow: $box-shadow;
+        .image_card{
+          width: 60%;
+          .image_resto{
+             
+          }
+          
+        }
+      
+        .information_resto{
+          display: flex;
+          flex-direction:column;
+          justify-content: space-between;
+         
+          width: 30%;
+          padding: 30px;
+          
+          .infos{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              .nom_resto{
+                  font-size: large;
+              }
+          }
+          .i{
+              width: 20%;
+          }
+          
+        }
+      }
+
+}
+}
+.restaurants{
+  .titre_section{
+    text-align: center;
+     font-size: x-large;
+  
+  }
+}
+.footer_identique{
+  text-align: center;
+  .img_footer{
+    font-size: xx-large;
+  }
 }
