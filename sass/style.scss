@@ -80,10 +80,14 @@
       padding-top: 20px;
     }
     .cards_resto{
+      @include display_column;
       width: 100%;
       .card_menu{
         color: black;
         text-decoration: none;
+        width: 100%;
+        
+      
       }
     }
 
