@@ -28,7 +28,7 @@
             }  
             list-style-type: none;
             @include  display_row;
-            width:100%;
+            //width:100%;
             padding: 20px 0 0 ;
             background-color: $background_elt_liste;
             border-radius: 20px;
