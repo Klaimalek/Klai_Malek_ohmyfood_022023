@@ -22,7 +22,7 @@
     
         background-color: lighten($color_primary, 15%);
         background-blend-mode: lighten;
-        animation: glowing 2s infinite ;
+        animation: glowing 2s forwards ;
        
     }
     /*.btn_bg{

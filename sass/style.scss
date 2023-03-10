@@ -75,10 +75,14 @@
     width: 100%;
     background-color: $background_color;
     @include display_column;
+    position: relative;
     
     .titre_section{
-      margin:$margin;
-      padding-top: 20px;
+      padding-top: 10px;
+      //padding-top: 20px;
+     display: flex;
+     padding-left:30px;
+     font-size: medium;
     }
     .cards_resto{
       @include display_column;

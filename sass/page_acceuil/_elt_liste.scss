@@ -3,9 +3,11 @@
 @import'../utils/animations';
 
 .liste_fonctionnement{
-    margin: $margin;
+
+    //margin: $margin;
     .liste_acceuil{
         @include display_column;
+        
         gap: 20px;
         width: 100%;
         counter-reset: number_step;
@@ -33,6 +35,7 @@
             background-color: $background_elt_liste;
             border-radius: 20px;
             flex-grow: 1;
+            font-size: small;
             box-shadow: $box-shadow;
             .fas{
                 color: rgb(116, 112, 112);
@@ -41,10 +44,12 @@
             }
            &:hover{
             background-color: lighten($color_primary, 33%);
+            
             .fas{
                 color:$color_primary ;
             }
            }  
         }
+
     }
 }
