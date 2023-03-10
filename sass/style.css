@@ -1083,14 +1083,15 @@ body {
   background-color: #99E2D0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-right: -50px;
-  width: 50px;
+  margin-right: -40px;
+  width: 40px;
 }
 .menu_price .check .fa-2x {
   color: white;
   animation: rotate 1s infinite;
 }
-.menu_price:hover .check {
+
+.elt_1:hover .check {
   margin-right: 0;
 }
 
@@ -1321,7 +1322,7 @@ span:before {
   animation: myAnim 4s ease forwards;
 }
 
-@media screen and (min-width: 782px) and (max-width: 1400px) {
+@media screen and (min-width: 762px) and (max-width: 1400px) {
   .cards_resto .cards_new {
     position: relative;
   }
@@ -1371,7 +1372,7 @@ span:before {
   font-size: x-large;
 }
 
-@media screen and (min-width: 782px) and (max-width: 1400px) {
+@media screen and (min-width: 762px) and (max-width: 1400px) {
   .footer_identique {
     text-align: center;
   }
@@ -1379,7 +1380,7 @@ span:before {
     font-size: xx-large;
   }
 }
-@media screen and (min-width: 782px) and (max-width: 1400px) {
+@media screen and (min-width: 762px) and (max-width: 1400px) {
   .cercle_loader {
     right: 40%;
   }
@@ -1401,6 +1402,18 @@ span:before {
   }
   .fonctionnement .liste_acceuil .element_liste .text {
     font-size: small;
+  }
+}
+@media screen and (min-width: 762px) and (max-width: 1400px) {
+  .liste_menus {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .liste_menus .elt_1 {
+    width: 45%;
   }
 }
 .header_acceuil {
