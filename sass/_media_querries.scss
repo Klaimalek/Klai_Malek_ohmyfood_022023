@@ -71,3 +71,29 @@
     }
 }
 }
+//loader
+@media screen and (min-width: 782px) and (max-width: 1400px){
+  .cercle_loader{
+    right: 40%;
+  }
+  .text_loading{
+    top:30%;
+    right:45% ;
+  }
+}
+//fonctionnement
+@media screen and (min-width: 782px) and (max-width: 1400px){
+  .fonctionnement{
+    
+    
+    .liste_acceuil{
+      width: 100%;
+      @include display_row;
+      
+      .element_liste{
+        width: 20%;
+        margin: 10px;
+      }
+    }
+  }
+}
