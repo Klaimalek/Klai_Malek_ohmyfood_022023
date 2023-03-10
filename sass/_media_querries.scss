@@ -1,6 +1,6 @@
 @import './utils/mixines';
 @import './utils/variables';
-@media screen and (min-width: 782px) and (max-width: 1400px) {
+@media screen and (min-width: 762px) and (max-width: 1400px) {
   .cards_resto {
     .cards_new{
       position: relative;
@@ -63,7 +63,7 @@
   }
 }
 // footer 
-@media screen and (min-width: 782px) and (max-width: 1400px){
+@media screen and (min-width: 762px) and (max-width: 1400px){
   .footer_identique{
     text-align: center;
     .img_footer{
@@ -72,7 +72,7 @@
 }
 }
 //loader
-@media screen and (min-width: 782px) and (max-width: 1400px){
+@media screen and (min-width: 762px) and (max-width: 1400px){
   .cercle_loader{
     right: 40%;
   }
@@ -104,4 +104,17 @@
       }
     }
   }
+}
+// media querrires pour les pages menus
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  .liste_menus{
+    width: 100%;
+    @include display_row;
+    justify-content: space-between;
+    
+    .elt_1{
+      width: 45%;
+    }
+  }
+  
 }
