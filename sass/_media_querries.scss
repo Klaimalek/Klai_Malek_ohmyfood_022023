@@ -82,7 +82,7 @@
   }
 }
 //fonctionnement
-@media screen and (min-width: 782px) and (max-width: 1400px){
+@media screen and (min-width: 762px) and (max-width: 1400px){
   .fonctionnement{
     
     
@@ -92,7 +92,15 @@
       
       .element_liste{
         width: 20%;
-        margin: 10px;
+        margin-left:10px;
+        .text{
+         font-size: small;
+        }
+        
+            
+        
+           
+          
       }
     }
   }
