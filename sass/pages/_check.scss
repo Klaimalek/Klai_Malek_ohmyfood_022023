@@ -57,7 +57,7 @@
       padding-right: 10px;
     }
     .check{
-        $btn_width:50px;
+        $btn_width:40px;
         display: grid;
         place-items: center;
         flex-shrink: 0;
@@ -73,10 +73,11 @@
             animation: rotate 1s infinite;
         }
     }
-    &:hover .check {
-        margin-right: 0;
-    }
+   
     
+}
+.elt_1:hover .check{
+    margin-right: 0;
 }
 /*.name_menu_1{
     cursor: pointer;
