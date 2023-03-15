@@ -1,7 +1,10 @@
 @import'../utils/mixines';
 @import'../utils/variables';
 .card{
-@include display_column;
+//@include display_column;
+
+display: inline;
+width: 90%;
 box-shadow: $box-shadow;
  margin: 0px 30px 20px  30px;
  border-radius: 10px 10px 10px 10px;

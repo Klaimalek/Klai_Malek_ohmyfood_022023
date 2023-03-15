@@ -11,6 +11,7 @@
    // animation: 3s linear 3s infinite running slidein; 
     position: relative;
     animation:  full-scale 500ms 100ms forwards ;
+    //animation-fill-mode:full-scale 500ms 100ms forwards;
     transform: scale(0);
 	transform-origin: bottom;
 

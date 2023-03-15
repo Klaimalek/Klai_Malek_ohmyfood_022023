@@ -105,6 +105,7 @@ body {
   }
   100% {
     opacity: 0;
+    width: 0%;
   }
 }
 @keyframes grow {
@@ -277,6 +278,7 @@ body {
   }
   100% {
     opacity: 0;
+    width: 0%;
   }
 }
 @keyframes grow {
@@ -466,6 +468,7 @@ body {
   }
   100% {
     opacity: 0;
+    width: 0%;
   }
 }
 @keyframes grow {
@@ -524,9 +527,8 @@ body {
   }
 }
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: inline;
+  width: 90%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin: 0px 30px 20px 30px;
   border-radius: 10px 10px 10px 10px;
@@ -650,6 +652,7 @@ body {
   }
   100% {
     opacity: 0;
+    width: 0%;
   }
 }
 @keyframes grow {
@@ -984,6 +987,7 @@ body {
   }
   100% {
     opacity: 0;
+    width: 0%;
   }
 }
 @keyframes grow {
@@ -1189,6 +1193,7 @@ body {
   }
   100% {
     opacity: 0;
+    width: 0%;
   }
 }
 @keyframes grow {
@@ -1323,55 +1328,16 @@ span:before {
 }
 
 @media screen and (min-width: 762px) and (max-width: 1400px) {
-  .cards_resto .cards_new {
-    position: relative;
+  .card {
+    width: 40%;
   }
-  .cards_resto .cards_new::before {
-    content: "New";
-    position: absolute;
-    height: 1.5rem;
-    width: 5rem;
-    background: #99E2D0;
-    border: 5px solid #99E2D0;
-    color: #008766;
-    right: 2%;
-    top: 40%;
-    display: grid;
-    place-items: center;
-  }
-  .cards_resto .card {
+  .cards_resto {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  .cards_resto .card .image_card {
-    width: 60%;
-  }
-  .cards_resto .card .information_resto {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    width: 30%;
-    padding: 30px;
-  }
-  .cards_resto .card .information_resto .infos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .cards_resto .card .information_resto .infos .nom_resto {
-    font-size: large;
-  }
-  .cards_resto .card .information_resto .i {
-    width: 20%;
   }
 }
-.restaurants .titre_section {
-  text-align: center;
-  font-size: x-large;
-}
-
 @media screen and (min-width: 762px) and (max-width: 1400px) {
   .footer_identique {
     text-align: center;
@@ -1489,12 +1455,12 @@ span:before {
 }
 .restaurants .cards_resto {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   width: 100%;
 }
 .restaurants .cards_resto .card_menu {
   color: black;
   text-decoration: none;
-  width: 100%;
+  width: 90%;
 }/*# sourceMappingURL=style.css.map */
