@@ -527,6 +527,7 @@ body {
   }
 }
 .card {
+  position: relative;
   display: inline;
   width: 90%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -535,10 +536,7 @@ body {
   background-color: #ffffff;
   cursor: pointer;
 }
-.card .image_card {
-  z-index: 1;
-}
-.card .image_card .image_resto {
+.card .image_resto {
   max-width: 100%;
   min-width: 100%;
   min-height: 160px;
@@ -546,24 +544,21 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0px 0px;
+  z-index: 1;
 }
 .card .text_nouveau {
   z-index: 2;
 }
-.card .information_resto {
+.card .infos {
+  padding: 5px 10px 10px 10px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 30px 10px 20px;
-}
-.card .information_resto .infos {
+  flex-direction: column;
   width: 70%;
 }
-.card .information_resto .infos .nom_resto {
+.card .infos .nom_resto {
   margin-bottom: 5px;
 }
-.card .information_resto .i {
+.card .i {
   width: 10%;
 }
 
@@ -724,6 +719,9 @@ body {
 }
 
 .icon_favorit {
+  position: absolute;
+  right: 10px;
+  bottom: 18px;
   font-size: x-large;
 }
 .icon_favorit .fas {
@@ -873,6 +871,18 @@ body {
     margin: $margin;
 
 }*/
+/*.card{
+    position: relative;
+    .btn__card{
+        border: 2px solid ;
+        color: #008766;
+        background: $color-tertiary;
+        border: 5px solid $color-tertiary;
+         position: absolute;
+         right: 3%;
+        top: 4%;
+    }
+}*/
 .cards_new {
   position: relative;
 }
@@ -884,8 +894,8 @@ body {
   background: #99E2D0;
   border: 5px solid #99E2D0;
   color: #008766;
-  left: 480px;
-  top: 12%;
+  right: 3%;
+  top: 4%;
   display: grid;
   place-items: center;
 }

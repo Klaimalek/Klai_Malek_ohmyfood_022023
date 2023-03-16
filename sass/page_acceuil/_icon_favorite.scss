@@ -3,6 +3,7 @@
 @import'../utils/animations';
 
 %icon{
+   
     display: block;
     color: transparent;
     background-clip: text;
@@ -14,33 +15,23 @@
     //animation-fill-mode:full-scale 500ms 100ms forwards;
     transform: scale(0);
 	transform-origin: bottom;
-
 }
-
-
         .icon_favorit{
+            position: absolute;
+            right: 10px;
+            bottom: 18px;
             font-size: x-large;
             .fas{
                 display: none;
-                
             }
             &:hover{
                 .far{
                     display: none;
-                
                 }
                 .fas{
                     @extend  %icon;
                     opacity: 1;
                 }
             }
-          
-            
-           // .fas{
-             //  color: transparent; 
-              // background-clip: text;
-               //background-image:linear-gradient( purple,pink)
-            
-        //}
         }
     

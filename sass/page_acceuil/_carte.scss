@@ -2,7 +2,7 @@
 @import'../utils/variables';
 .card{
 //@include display_column;
-
+position: relative;
 display: inline;
 width: 90%;
 box-shadow: $box-shadow;
@@ -11,29 +11,30 @@ box-shadow: $box-shadow;
  background-color: $background_card;
  cursor: pointer;
  
-  .image_card{
+  
     .image_resto{
         @include  img_resto;
         @include border_img;
-      
+        z-index: 1;
     }
     
-   z-index: 1;
+  // z-index: 1;
    
-  }
+  
   .text_nouveau{
     
 z-index: 2;
 
 
   }
-  .information_resto{
-    @include display_row;
-    justify-content: space-between;
-    padding:  10px 30px 10px 20px;
+  
+    
     .infos{
-        width: 70%;
-        .nom_resto{
+      padding: 5px 10px 10px 10px;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+       .nom_resto{
             margin-bottom: 5px;
         }
     }
@@ -41,5 +42,5 @@ z-index: 2;
         width: 10%;
     }
     
-  }
+  
 }
