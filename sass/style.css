@@ -873,18 +873,6 @@ body {
     margin: $margin;
 
 }*/
-/*.card{
-    position: relative;
-    .btn__card{
-        border: 2px solid ;
-        color: #008766;
-        background: $color-tertiary;
-        border: 5px solid $color-tertiary;
-         position: absolute;
-         right: 3%;
-        top: 4%;
-    }
-}*/
 .cards_new {
   position: relative;
 }
@@ -896,8 +884,8 @@ body {
   background: #99E2D0;
   border: 5px solid #99E2D0;
   color: #008766;
-  right: 2%;
-  top: 4%;
+  left: 480px;
+  top: 12%;
   display: grid;
   place-items: center;
 }
