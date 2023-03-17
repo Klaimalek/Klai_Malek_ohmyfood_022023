@@ -1,5 +1,6 @@
 @import './utils/mixines';
 @import './utils/variables';
+@import './utils/animations';
 
 @media screen and (min-width: 762px) and (max-width: 1400px){
   .card{
@@ -9,8 +10,8 @@
     @include display_row;
     justify-content: space-between;
   }
+ 
 }
-
 
 // footer 
 @media screen and (min-width: 762px) and (max-width: 1400px){
@@ -73,5 +74,21 @@
   .header_page{
   display: flex;
   justify-content: space-between;
+  }
+}
+
+// 
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  
+  .main_menu{
+    .resto_la_francaise{
+      background-color: white;
+      .img_resto_la_francaise{
+        
+      }
+    }
+    .description_menu{
+     
+    }
   }
 }

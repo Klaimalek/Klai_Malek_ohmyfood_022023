@@ -1,7 +1,6 @@
 @import'../utils/mixines';
 @import'../utils/variables';
 .card{
-//@include display_column;
 position: relative;
 display: inline;
 width: 90%;
@@ -10,25 +9,14 @@ box-shadow: $box-shadow;
  border-radius: 10px 10px 10px 10px;
  background-color: $background_card;
  cursor: pointer;
- 
-  
     .image_resto{
         @include  img_resto;
         @include border_img;
         z-index: 1;
     }
-    
-  // z-index: 1;
-   
-  
   .text_nouveau{
-    
 z-index: 2;
-
-
   }
-  
-    
     .infos{
       padding: 5px 10px 10px 10px;
       display: flex;
@@ -41,6 +29,4 @@ z-index: 2;
     .i{
         width: 10%;
     }
-    
-  
 }

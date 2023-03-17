@@ -3,11 +3,9 @@
 @import'../utils/animations';
 
 .liste_fonctionnement{
-
-    //margin: $margin;
     .liste_acceuil{
+        padding:10px;
         @include display_column;
-        
         gap: 20px;
         width: 100%;
         counter-reset: number_step;
@@ -30,7 +28,6 @@
             }  
             list-style-type: none;
             @include  display_row;
-            //width:100%;
             padding: 20px 0 0 ;
             background-color: $background_elt_liste;
             border-radius: 20px;
