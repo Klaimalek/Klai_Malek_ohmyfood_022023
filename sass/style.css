@@ -996,6 +996,7 @@ body {
   bottom: 30px;
 }
 .main_menu .resto_la_francaise .description_menu .titre_resto_icon_coeur {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -1004,6 +1005,9 @@ body {
 }
 .main_menu .resto_la_francaise .description_menu .titre_resto_icon_coeur .titre_menu {
   font-family: "Shrikhand", cursive;
+}
+.main_menu .resto_la_francaise .description_menu .titre_resto_icon_coeur .icon_favorit {
+  margin-bottom: -15px;
 }
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 {
   margin-bottom: 30px;
