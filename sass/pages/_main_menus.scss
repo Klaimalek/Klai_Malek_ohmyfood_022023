@@ -17,13 +17,15 @@
     position: relative;
     bottom: 30px;
   .titre_resto_icon_coeur{
+    position: relative;
     @include display_row;
     justify-content: space-between;
     margin-bottom: $margin;
     .titre_menu{
-    
-        font-family: $font-title;
-        
+        font-family: $font-title; 
+    }
+    .icon_favorit{
+          margin-bottom: -15px;
     }
 }  
 .detail_menu_1{
