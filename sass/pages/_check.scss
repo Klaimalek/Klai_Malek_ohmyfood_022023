@@ -11,10 +11,11 @@
     padding:5px ;
     height: 100%; 
     .fa-2x{
-    animation: rotate 1s forwards;
+// animation: rotate 1s infinite;
     }
 }
 .menu_price{
+    position: relative;
     overflow: hidden;
     .price{
       padding-bottom: 10px;
@@ -31,13 +32,23 @@
         border-bottom-right-radius: 10px;
         margin-right: -1* $btn_width;
         width: $btn_width; 
-    
+       
+        
         .fa-2x{
-            color: white;
-            animation: rotate 1s infinite;
+        color: white;
         }
     }
 }
-.elt_1:hover .check{
+.elt_1:hover{
+     .check {
     margin-right: 0;
+    
+    .fa-2x{
+        position: relative;
+        transition-duration: 0.8s;
+        transition-property: transform;
+        transform: rotate(360deg);
+    }
+  }
 }
+
