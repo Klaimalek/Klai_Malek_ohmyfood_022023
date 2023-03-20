@@ -51,13 +51,13 @@ body {
 }
 @keyframes glowing {
   0% {
-    box-shadow: 5px 5px 3px #121010;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
   50% {
-    box-shadow: 5px 5px 3px #131010;
+    box-shadow: 3px 3px 3px #a49898;
   }
   100% {
-    box-shadow: 3px 3px 3px #0b0808;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
 }
 @keyframes slidein {
@@ -82,10 +82,10 @@ body {
 }
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes grow {
@@ -271,13 +271,13 @@ body {
 }
 @keyframes glowing {
   0% {
-    box-shadow: 5px 5px 3px #121010;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
   50% {
-    box-shadow: 5px 5px 3px #131010;
+    box-shadow: 3px 3px 3px #a49898;
   }
   100% {
-    box-shadow: 3px 3px 3px #0b0808;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
 }
 @keyframes slidein {
@@ -302,10 +302,10 @@ body {
 }
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes grow {
@@ -509,13 +509,13 @@ body {
 }
 @keyframes glowing {
   0% {
-    box-shadow: 5px 5px 3px #121010;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
   50% {
-    box-shadow: 5px 5px 3px #131010;
+    box-shadow: 3px 3px 3px #a49898;
   }
   100% {
-    box-shadow: 3px 3px 3px #0b0808;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
 }
 @keyframes slidein {
@@ -540,10 +540,10 @@ body {
 }
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes grow {
@@ -735,13 +735,13 @@ body {
 }
 @keyframes glowing {
   0% {
-    box-shadow: 5px 5px 3px #121010;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
   50% {
-    box-shadow: 5px 5px 3px #131010;
+    box-shadow: 3px 3px 3px #a49898;
   }
   100% {
-    box-shadow: 3px 3px 3px #0b0808;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
 }
 @keyframes slidein {
@@ -766,10 +766,10 @@ body {
 }
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes grow {
@@ -1124,13 +1124,13 @@ body {
 }
 @keyframes glowing {
   0% {
-    box-shadow: 5px 5px 3px #121010;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
   50% {
-    box-shadow: 5px 5px 3px #131010;
+    box-shadow: 3px 3px 3px #a49898;
   }
   100% {
-    box-shadow: 3px 3px 3px #0b0808;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
 }
 @keyframes slidein {
@@ -1155,10 +1155,10 @@ body {
 }
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes grow {
@@ -1284,6 +1284,7 @@ body {
   }
 }
 .menu_price {
+  position: relative;
   overflow: hidden;
 }
 .menu_price .price {
@@ -1303,11 +1304,16 @@ body {
 }
 .menu_price .check .fa-2x {
   color: white;
-  animation: rotate 1s infinite;
 }
 
 .elt_1:hover .check {
   margin-right: 0;
+}
+.elt_1:hover .check .fa-2x {
+  position: relative;
+  transition-duration: 0.8s;
+  transition-property: transform;
+  transform: rotate(360deg);
 }
 
 @keyframes full-scale {
@@ -1341,13 +1347,13 @@ body {
 }
 @keyframes glowing {
   0% {
-    box-shadow: 5px 5px 3px #121010;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
   50% {
-    box-shadow: 5px 5px 3px #131010;
+    box-shadow: 3px 3px 3px #a49898;
   }
   100% {
-    box-shadow: 3px 3px 3px #0b0808;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
 }
 @keyframes slidein {
@@ -1372,10 +1378,10 @@ body {
 }
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes grow {
@@ -1607,13 +1613,13 @@ span:before {
 }
 @keyframes glowing {
   0% {
-    box-shadow: 5px 5px 3px #121010;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
   50% {
-    box-shadow: 5px 5px 3px #131010;
+    box-shadow: 3px 3px 3px #a49898;
   }
   100% {
-    box-shadow: 3px 3px 3px #0b0808;
+    box-shadow: 3px 3px 3px #b6b0b0;
   }
 }
 @keyframes slidein {
@@ -1638,10 +1644,10 @@ span:before {
 }
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes grow {
