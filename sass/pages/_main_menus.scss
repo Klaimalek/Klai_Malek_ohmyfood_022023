@@ -50,7 +50,7 @@ margin-bottom:$margin ;
 .liste_menus{
     margin-top: $margin;
     .elt_1{
-        animation: dish 3s;
+        animation: dish 3s forwards;
         overflow: hidden;
         //white-space: nowrap;
         //text-overflow: ellipsis;

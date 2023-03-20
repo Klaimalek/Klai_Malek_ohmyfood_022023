@@ -1026,7 +1026,7 @@ body {
   margin-top: 30px;
 }
 .main_menu .resto_la_francaise .description_menu .detail_menu_1 .menu_1 .liste_menus .elt_1 {
-  animation: dish 3s;
+  animation: dish 3s forwards;
   overflow: hidden;
   margin-bottom: 20px;
   background-color: #ffffff;
